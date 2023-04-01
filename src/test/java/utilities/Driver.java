@@ -27,7 +27,6 @@ public class Driver {
                     opt.addArguments("--remote-allow-origins=*");
                     opt.addArguments("--no-sandbox");
                     opt.addArguments("--disable-dev-shm-usage");
-                    opt.addArguments("--headless");
 
                     driver = new ChromeDriver(opt);
             }
