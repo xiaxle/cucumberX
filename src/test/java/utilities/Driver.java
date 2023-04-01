@@ -24,6 +24,7 @@ public class Driver {
                 default:
                     System.setProperty("webdriver.chrome.whitelistedIps", "");
                     ChromeOptions opt = new ChromeOptions();
+                    opt.addArguments("--remote-allow-origins=*");
                     driver = new ChromeDriver(opt);
             }
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
