@@ -23,7 +23,15 @@ public class Driver {
                     break;
                 default:
                     ChromeOptions opt = new ChromeOptions();
+                    opt.addArguments("--remote-allow-origins=*");
+                    opt.addArguments("--no-sandbox");
+                    opt.addArguments("--disable-dev-shm-usage");
+                    opt.addArguments("--disable-gpu");
                     opt.addArguments("--headless");
+                    opt.addArguments("--window-size=1920,1080'");
+                    opt.addArguments("--ignore-certificate-errors");
+                    opt.addArguments("--disable-extensions");
+
                     driver = new ChromeDriver(opt);
             }
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
