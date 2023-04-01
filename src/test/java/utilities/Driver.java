@@ -22,6 +22,7 @@ public class Driver {
                     driver = new FirefoxDriver();
                     break;
                 default:
+                    System.setProperty("webdriver.chrome.whitelistedIps", "");
                     ChromeOptions opt = new ChromeOptions();
                     driver = new ChromeDriver(opt);
             }
