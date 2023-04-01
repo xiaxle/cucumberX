@@ -25,6 +25,10 @@ public class Driver {
                     System.setProperty("webdriver.chrome.whitelistedIps", "");
                     ChromeOptions opt = new ChromeOptions();
                     opt.addArguments("--remote-allow-origins=*");
+                    opt.addArguments("--no-sandbox");
+                    opt.addArguments("--disable-dev-shm-usage");
+                    opt.addArguments("--headless");
+
                     driver = new ChromeDriver(opt);
             }
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
