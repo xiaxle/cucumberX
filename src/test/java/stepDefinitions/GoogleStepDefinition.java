@@ -1,8 +1,8 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.Given;
-import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.testng.Assert;
 import pages.GoogleHomePage;
 import utilities.ConfigReader;
 import utilities.Driver;
