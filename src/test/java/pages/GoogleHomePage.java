@@ -14,7 +14,7 @@ public class GoogleHomePage {
     @FindBy(xpath = "(//div[@class='QS5gu sy4vM'])[2]")
     public WebElement acceptCookiesButton;
 
-    @FindBy(css = "[name=22q]")
+    @FindBy(css = "[name=q]")
     public WebElement searchBoxInput;
 
     @FindBy(id = "result-stats")
