@@ -27,7 +27,7 @@ public class Driver {
                     opt.addArguments("--no-sandbox");
                     opt.addArguments("--disable-dev-shm-usage");
                     opt.addArguments("--disable-gpu");
-                    opt.addArguments("--headless");
+                    //opt.addArguments("--headless=new");
                     opt.addArguments("--window-size=1920,1080'");
                     opt.addArguments("--ignore-certificate-errors");
                     opt.addArguments("--disable-extensions");
